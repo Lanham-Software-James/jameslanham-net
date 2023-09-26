@@ -70,7 +70,7 @@ export default {
 #navbar {
   position:absolute;
   top:0;
-  z-index:-10;
+  z-index: 1;
   background: rgb(255, 255, 255); opacity: 0.75;
   width:100%;
   height: 7.5vh;
@@ -78,7 +78,7 @@ export default {
 
 #carousel {
   top:0;
-  z-index: -50;
+  z-index: 0;
 }
 
 .hero {
