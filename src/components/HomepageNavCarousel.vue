@@ -26,7 +26,7 @@
     </el-menu>
 
     <el-carousel id="carousel" height="75vh">
-      <el-carousel-item v-for="(image, index) in images" >
+      <el-carousel-item v-for="(image, index) in images" :key="image">
         <div class="hero" :style="getStyle(index)" />
       </el-carousel-item>
     </el-carousel>
@@ -35,9 +35,9 @@
 
 <script lang="ts">
 import { ref } from 'vue'
-import Img1 from '../../assets/pexels-lukas-574071.jpg'
-import Img2 from '../../assets/pexels-fauxels-3184416.jpg'
-import Img3 from '../../assets/pexels-pixabay-416405.jpg'
+import Img1 from '../assets/pexels-lukas-574071.jpg'
+import Img2 from '../assets/pexels-fauxels-3184416.jpg'
+import Img3 from '../assets/pexels-pixabay-416405.jpg'
 
 const activeIndex = ref('1')
 const handleSelect = (key: string, keyPath: string[]) => {

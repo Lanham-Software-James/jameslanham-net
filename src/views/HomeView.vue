@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import Carousel from '../components/homepage/Carousel.vue';
+import Carousel from '../components/HomepageNavCarousel.vue';
 </script>
 
 <template>
