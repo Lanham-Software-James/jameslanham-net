@@ -1,9 +1,12 @@
 <script setup lang="ts">
-import Carousel from '../components/HomepageNavCarousel.vue';
+import HomepageNavCarousel from '../components/HomepageNavCarousel.vue';
 </script>
 
 <template>
   <main>
-    <Carousel />
+    <Suspense>
+      <HomepageNavCarousel />
+    </Suspense>
+    
   </main>
 </template>
